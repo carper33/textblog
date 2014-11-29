@@ -2,4 +2,10 @@
 
 <%= render 'form' %>
 
-<p class="back"><%= link_to 'Back', users_path %></p>
+<div class="buttons">
+	<p ><%= link_to 'Back', users_path %></p>
+<!-- no funciona -->
+	<p>
+		<a href="welcome"><%= link_to 'Home', users_path %></a>	
+	</p>
+</div>
