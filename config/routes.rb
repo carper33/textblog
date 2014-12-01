@@ -15,6 +15,8 @@ Rails.application.routes.draw do
   resources :posts, only: [:index, :show]
   root "posts#index", as: "scoped_root"
  end
+ get "posts/por_post"
+post "posts/por_post"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

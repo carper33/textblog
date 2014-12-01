@@ -4,26 +4,15 @@
 body{
 	width: 100%;
   	height: 100%;
-  	// background-image: image-url("aves-sunset.jpg") ;
+  	background-image: image-url("aves-sunset.jpg") ;
 	background-size: cover;
   }
 
  .nav_container{
-  	border-top: 1px solid black; 
-
-	}
-.logo{
-	width: 15%;
-  	height: 15%;
- //  	-moz-animation-duration: 3s;
- //  	-moz-animation-name: slidein;
-	// -moz-animation-iteration-count: infinite;
-	display: block;
-  	margin: 0.94697em auto;
-  	clear: both;
-
+	margin:0 auto;
+ 
 }
-#button{
+li:first-child{
 	background:-moz-linear-gradient(top, #DC143C 5%, #a5cc52 100%);
 	background-color:#DC143C;
 	border-radius:6px;
@@ -34,12 +23,10 @@ body{
 	font-family:arial;
 	font-size:15px;
 	font-weight:bold;
-	padding:6px 24px;
 	text-decoration:none;
 	text-shadow:0px 1px 0px #86ae47;
 }
-
-#button:hover {
+li:first-child:hover {
 	background:-moz-linear-gradient(top, #a5cc52 5%, #DC143C 50%);
 	background:linear-gradient(to bottom, #a5cc52 5%, #DC143C 50%);
 	background-color:#a5cc52;
@@ -48,18 +35,59 @@ body{
 .container{
 	width:60%;
 	height:700px;
-	background-color: black ;
+	background-color: lightgreen ;
 	margin: auto;
 	border-radius:10px;
 }
 .main_menu{
 	width:100%;
+	height:15%;
+	line-height: 50px;
 	margin: 0 auto;
-	color: whitespace;
+	float:right;
+	padding:0.1 em;
 	li {
-		width:25%;
+		text-align: left;
+		width:24%;
 		display: inline-block;
+		text-align:center;
+		background-color:black;  
+		border-radius:5px; 
+}
 
+}
+.welcome{
+	background-color:black;
+	border-radius:5px;
+	width: 75%;
+	float: left;
+	margin-top: 50px;
+	margin-left: 100px;
+	height: 75%;
+	h1{
+		width:25%;
+		text-align: center;
+		color:darkred;
+		size:30px;
+		width: 100%; 
+		margin-top: 20px;
 	}
-
+}
+.vista-lista-post{
+	width:49%;
+	height:200px;
+	background-color:darkred;
+	float:left;
+}
+.markdown-info{
+	width:49%;
+	height:200px;
+	background-color:darkred;
+	float:right;
+}
+.buscador-post{
+	width:60%;
+	height:200px;
+	background-color:darkred;
+	margin:auto;
 }

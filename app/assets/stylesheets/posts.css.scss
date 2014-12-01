@@ -4,10 +4,58 @@
 
 
 
-.main-post{
-	max-width:920px;
+.title-post{
+	width:25%;
 	margin: auto;
+	background-color: lightsalmon;
+	text-align:center;
+	color:black;
+	border-radius:5px;
+	margin-bottom:30px;
+}
+.post-content{
+	max-width:920px;
+	height: 100%;
+	background-color:lightsalmon;
+	margin: 0 auto;
+	padding:1em;
+	text-align:center;
+	border-radius: 2em;
+}
 .post-header{
+	width: 20%;
+	height: 20%;
+	background-color:lightsalmon;
+	margin: 0 auto;
+	padding:1em;
+	text-align:center;
+	border-radius: 2em;
+	margin-top:2em;
 
 }
+.posts-table{
+	width: 75%;
+	height: 75%;
+	background-color:lightsalmon;
+	margin: 0 auto;
+	padding:1em;
+	text-align:center;
+	border-radius: 2em;
+}
+.list-users{
+	width: 75%;
+	height: 75%;
+	background-color:lightsalmon;
+	margin: 0 auto;
+	padding:1em;
+	text-align:center;
+	border-radius: 2em;
+	margin-top:2em;
+}
+.container{
+	width:60%;
+	height:700px;
+	background-color: lightgreen ;
+	margin: auto;
+	border-radius:10px;
 }

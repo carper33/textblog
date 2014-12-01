@@ -1,7 +1,28 @@
-<div class="main-post">
+<div class="title-post">
 	<header><%= @post.title %></header>
+</div>
 <div class= "post-content">
 	<%= @post.body %>
+	<div class="comments">
+		<h2> Posteá un comentario </h2>
+			<%= form_tag({:controller => "posts", :action => "por_post"}, :method => "post") do %>
+			   <%= label_tag "User", "User" %>
+	   <br />
+	   		<%= text_field_tag "user", "", :required => "required" %>
+	   <br />
+	   		<%= label_tag "Comentario", "comentario" %>
+	   <br />
+	   		<%= text_area_tag "comentario", "", :cols => 50, :rows => 10, :required => "required" %>
+	   <br />
+		   <%= submit_tag "Enviar comentario" %>
+			<% end %>
+			<% if @comentario %>
+	   <p> <strong><%= @comentario[:user] %></strong>, Gracias por publicar tu comentario </p>
+	   <div class="comentario">
+	      <%= simple_format (@comentario[:consulta]) %>
+	   </div>
+	</div>
+	<% end %>
 </div>
 
-</div>
+
