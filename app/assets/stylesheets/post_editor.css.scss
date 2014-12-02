@@ -1,0 +1,28 @@
+.post_form {
+  position: relative;
+  width: 700px;
+  margin: 0 auto;
+  * {
+    box-sizing: border-box;
+  }
+  .post_title {
+    display: block;
+    margin: 0 auto;
+    font-size: 3em;
+  }
+
+  .post_body {
+    position: absolute;
+    left: 0px;
+    width: 50%;
+    min-height: 500px;
+  }
+
+  .rendered_post_body {
+    border: 1px solid black;
+    position: absolute;
+    right: 0px;
+    width: 50%;
+    min-height: 500px;
+  }
+}
