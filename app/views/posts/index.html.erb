@@ -1,11 +1,10 @@
 <link rel="stylesheet" href="/posts">
-<h1 class= "post-header">Listing posts</h1>
+<h1 class= "post-header">Listing posts from user: <%= @user.username %></h1>
 <section class="container">
   <%= render 'shared/nav_bar' %>
-  <% @posts.each do |post| %>
-    <tr>
-      <td><%= link_to post.title, post_path(@user.username, post.slug) %></td>
-      <td><%= post.body %></td>
-    </tr>
-  <% end %>
+  <table>
+    <%= render partial: 'post', collection: @posts %>
+  </table>
+  <br />
+  <%= link_to "Create a new post", new_post_path(current_user.username) if can_create? %>
 </section>

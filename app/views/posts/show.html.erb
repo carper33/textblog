@@ -5,8 +5,6 @@
 	<%= @post.body %>
 </div>
 <div class="link">
-	<%= link_to("Back", :back) %>
+	<%= link_to("Back", posts_path(current_user.username)) %>
+	<%= link_to("Edit", edit_post_path(current_user.username, @post)) if can_edit?(@post) %>
 </div>
- 	
-
-
