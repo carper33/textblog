@@ -5,22 +5,22 @@
 
  
 .title-post{
-	width:25%;
-	margin: auto;
-	background-color: lightsalmon;
+	color:green;
+	background-color:black;
+	width:10em;
+	height: 2em;
+	border-radius: 5em;
+	border-color: black ;
 	text-align:center;
-	color:black;
-	border-radius:5px;
-	margin-bottom:30px;
+	padding:2em;
+	margin: 0 auto;
 }
 .post-content{
-	max-width:920px;
-	height: 100%;
-	background-color:lightsalmon;
-	margin: 0 auto;
-	padding:1em;
-	text-align:center;
-	border-radius: 2em;
+	width:60%;
+	height:700px;
+	background-image: image-url("letras.jpg");
+	margin: auto;
+	border-radius:10px;
 }
 .post-header{
 	width: 20%;
@@ -91,12 +91,10 @@
 	width: 5%;
 	height: 5%;
 	background-color:black;
-	margin: 550px auto;
+	margin: 150px auto;
 	padding:1em;
 	text-align:center;
 	border-radius: 2em;
-	display:inline-block;
-	float:right;
 	
 	a{
 	color:darkred;	
