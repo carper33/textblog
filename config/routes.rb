@@ -1,7 +1,23 @@
 Rails.application.routes.draw do
 
+  devise_for :users, controllers: {
+    registrations: 'user/registrations'
+  }
+  namespace "admin" do
+    resources :posts
+  end
 
- 
+  get 'home/index'
+
+  get 'welcome/index'
+  root to: 'welcome#index'
+
+  get 'posts/all', as: :all_posts
+
+  scope ":user_name" do
+    resources :posts
+    root "posts#index", as: "scoped_root"
+  end
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

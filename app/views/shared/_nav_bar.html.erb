@@ -1,0 +1,14 @@
+<div class="nav_container">
+  <nav class="nav">
+    <ul class="main_menu">
+      <% if current_user %>
+        <li><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
+      <% else %>
+        <li><a href="/users/sign_in">LOG IN</a></li>
+      <% end %>
+      <li><a href="#top">HOME</a></li>
+      <li><%= link_to 'ALL POSTS', all_posts_path %></li>
+      <li><a href="#contact">ABOUT ME</a></li>
+    </ul>
+  </nav>
+</div>
