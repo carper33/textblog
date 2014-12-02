@@ -13,8 +13,10 @@ Rails.application.routes.draw do
   get 'welcome/index'
   root to: 'welcome#index'
 
+  get 'posts/all', as: :all_posts
+
   scope ":user_name" do
-    resources :posts, only: [:index, :show]
+    resources :posts
     root "posts#index", as: "scoped_root"
   end
 
