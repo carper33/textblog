@@ -30,7 +30,8 @@
 	padding:1em;
 	text-align:center;
 	border-radius: 2em;
-	margin-top:2em;
+	margin-top:1em;
+	margin-bottom:1em;
 
 }
 .posts-table{
@@ -47,7 +48,7 @@
 	height: 75%;
 	background-color:lightsalmon;
 	margin: 0 auto;
-	padding:1em;
+	padding:2em;
 	text-align:center;
 	border-radius: 2em;
 	margin-top:2em;
@@ -55,7 +56,45 @@
 .container{
 	width:60%;
 	height:700px;
-	background-color: lightgreen ;
+	background-image: image-url("letras.jpg") ;
 	margin: auto;
 	border-radius:10px;
+}
+.main_menu{
+	width:100%;
+	height:15%;
+	line-height: 50px;
+	margin: 0 auto;
+	float:right;
+	padding:0.1 em;
+	margin-bottom:30px;
+
+	li {
+		text-align: left;
+		width:24%;
+		display: inline-block;
+		text-align:center;
+		background-color:black;  
+		border-radius:5px; 
+	}
+}
+.table{
+	background-color: #000;
+	width: 500px;
+	margin: 50px auto;
+	float:left;
+	margin-left:16em;
+	height:500px;
+
+}
+.link{
+	width: 5%;
+	height: 5%;
+	background-color:black;
+	margin: 0 auto;
+	padding:1em;
+	text-align:center;
+	border-radius: 2em;
+	display:inline-block;
+
 }

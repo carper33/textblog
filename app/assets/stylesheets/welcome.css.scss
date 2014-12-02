@@ -35,7 +35,7 @@ li:first-child:hover {
 .container{
 	width:60%;
 	height:700px;
-	background-color: lightgreen ;
+	background-image: image-url("letras4.jpg");
 	margin: auto;
 	border-radius:10px;
 }
@@ -46,6 +46,7 @@ li:first-child:hover {
 	margin: 0 auto;
 	float:right;
 	padding:0.1 em;
+
 	li {
 		text-align: left;
 		width:24%;
@@ -57,7 +58,7 @@ li:first-child:hover {
 
 }
 .welcome{
-	background-color:black;
+
 	border-radius:5px;
 	width: 75%;
 	float: left;
@@ -78,16 +79,19 @@ li:first-child:hover {
 	height:200px;
 	background-color:darkred;
 	float:left;
+	border-radius:5px;
 }
 .markdown-info{
 	width:49%;
 	height:200px;
 	background-color:darkred;
 	float:right;
+	border-radius:5px;
 }
 .buscador-post{
 	width:60%;
 	height:200px;
 	background-color:darkred;
 	margin:auto;
+	border-radius:5px;
 }

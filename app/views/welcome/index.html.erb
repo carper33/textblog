@@ -3,9 +3,10 @@
     <div class="nav_container">
       <nav class="nav">
         <ul class="main_menu">
-          <li><a href="posts/new">LOGIN</a></li>
+          <li><a href="/users/sign_in">LOG IN</a></li>
+          <li><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
           <li><a href="#top">HOME</a></li>
-          <li><a href="#post">TEXTS</a></li>
+          <li><a href="/:user_name/posts">TEXTS</a></li>
           <li><a href="#contact">ABOUT ME</a></li>
         </ul>
       </nav>
@@ -13,13 +14,14 @@
     <section class="welcome">
       <div class="vista-lista-post">
         <p>imagen con la lista de todos los posts, actualizados</p>
+        <%= link_to("allpost", posts_path(current_user.username)) %>
       </div>
       <div class="markdown-info">
           <p>informacion para utilizar markdown en la web</p>
       </div>
-      <h1 class="welcome-text">BIENVENIDO A TEXTL0G ,Publica y comparte un pedazito de ti.</h1>
+      <h1 class="welcome-text">BIENVENIDO A TEXTL0G ,Publica y comparte un pedacito de ti.</h1>
       <div class="buscador-post">
-          <p>buscador con opciones, usuarios , titulos de textos, palabras clave?</p>
+          <input type="text" name="buscador" value="text">buscador con opciones, usuarios , titulos de textos, palabras clave?</input>
       </div>
     </section>
  	</main>
