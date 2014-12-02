@@ -12,11 +12,11 @@
       </div>
     <% end %>
 
-    <%= f.text_field :title, class: "post_title" %>
+    <%= f.text_field :title, id: "post_title" %>
 
-    <%= f.text_area :body, class: "post_body" %>
+    <%= f.text_area :body, id: "post_body" %>
 
-    <div class="rendered_post_body">
+    <div id="rendered_post_body">
     </div>
 
     <div class="actions">
