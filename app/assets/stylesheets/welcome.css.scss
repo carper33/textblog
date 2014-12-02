@@ -10,9 +10,12 @@ body{
 
  .nav_container{
 	margin:0 auto;
+	padding:0.5em;
+	margin-left: 1em;
+
  
 }
-li:first-child{
+li:first-child,.logout{
 	background:-moz-linear-gradient(top, #DC143C 5%, #a5cc52 100%);
 	background-color:#DC143C;
 	border-radius:6px;
@@ -80,6 +83,8 @@ li:first-child:hover {
 	background-color:darkred;
 	float:left;
 	border-radius:5px;
+	border-width: 1px;
+	border-color:black;
 }
 .markdown-info{
 	width:49%;
@@ -87,6 +92,8 @@ li:first-child:hover {
 	background-color:darkred;
 	float:right;
 	border-radius:5px;
+	border-width: 1px;
+	border-color:black;
 }
 .buscador-post{
 	width:60%;
@@ -94,4 +101,6 @@ li:first-child:hover {
 	background-color:darkred;
 	margin:auto;
 	border-radius:5px;
+	border-width: 1px;
+	border-color:black;
 }

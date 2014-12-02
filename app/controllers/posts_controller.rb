@@ -7,7 +7,6 @@ class PostsController < ApplicationController
     @posts = @user.posts
   end
 
-
   # GET /posts/1
   # GET /posts/1.json
   def show
@@ -15,7 +14,7 @@ class PostsController < ApplicationController
   end
 
   def find_user
-    @user = User.find_by_username(params[:user_name])
+    @user = User.find_by username: params[:user_name]
   end
              
 

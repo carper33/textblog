@@ -4,17 +4,19 @@
       <nav class="nav">
         <ul class="main_menu">
           <li><a href="/users/sign_in">LOG IN</a></li>
-          <li><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
           <li><a href="#top">HOME</a></li>
           <li><a href="/:user_name/posts">TEXTS</a></li>
           <li><a href="#contact">ABOUT ME</a></li>
+          <li class="logout"><%= link_to 'LOG OUT', destroy_user_session_path, method: :delete %></li>
         </ul>
       </nav>
     </div>
     <section class="welcome">
       <div class="vista-lista-post">
         <p>imagen con la lista de todos los posts, actualizados</p>
-        <%= link_to("allpost", posts_path(current_user.username)) %>
+        <% if current_user  %>
+          <%= link_to("allpost", posts_path(current_user.username)) %>
+        <% end %>
       </div>
       <div class="markdown-info">
           <p>informacion para utilizar markdown en la web</p>
