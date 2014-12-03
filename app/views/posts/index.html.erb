@@ -1,7 +1,9 @@
 <link rel="stylesheet" href="/posts">
+ <nav class="navbar-default" role="navigation">
+  <%= render 'shared/nav_bar' %>
+ </nav>
 <h1 class= "post-header">Listing posts from user: <%= @user.username %></h1>
 <section class="container">
-  <%= render 'shared/nav_bar' %>
   <table>
     <%= render partial: 'post', collection: @posts %>
   </table>
