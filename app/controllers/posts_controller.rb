@@ -46,6 +46,9 @@ class PostsController < ApplicationController
   end
 
   def update
+    puts "HEY"
+    puts post_params
+    puts "HO"
     @post.update_attributes(post_params)
     redirect_to post_path(@post.user.username, @post)
   end

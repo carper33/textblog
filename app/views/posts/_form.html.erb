@@ -12,9 +12,10 @@
       </div>
     <% end %>
 
-    <%= f.text_field :title, id: "post_title" %>
+    <%= f.text_field :title, placeholder: "Your post title", id: "post_title" %>
+    <%= f.submit "✓", id: "save_post_button" %>
 
-    <%= f.text_area :body, id: "post_body" %>
+    <%= f.text_area :body, id: "post_body", placeholder: "Your post body" %>
 
     <div id="rendered_post_body">
     </div>
@@ -23,4 +24,7 @@
       <%= f.submit "Save" %>
     </div>
   <% end %>
+</div>
+
+<div id="image_editor_footer">
 </div>

@@ -16,4 +16,13 @@ $(document).ready(function() {
     renderedPostBody.html(processedBody);
     postBody.height(renderedPostBody.height());
   }, 200));
+
+
+
+
+
+  var imageEditor = $("#image_editor_footer");
+  imageEditor.click(function() {
+    imageEditor.toggleClass("active");
+  });
 });

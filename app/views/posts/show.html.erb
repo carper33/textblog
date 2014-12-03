@@ -2,9 +2,9 @@
 	<header><%= @post.title %></header>
 </div>
 <div class= "post-content">
-	<%= @post.body %>
+	<%= @post.rendered.html_safe %>
 </div>
 <div class="link">
-	<%= link_to("Back", posts_path(current_user.username)) %>
+	<%= link_to("Back", posts_path(@post.user.username)) %>
 	<%= link_to("Edit", edit_post_path(current_user.username, @post)) if can_edit?(@post) %>
 </div>
