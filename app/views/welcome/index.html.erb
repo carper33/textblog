@@ -2,20 +2,18 @@
   <main class = "container">
     <%= render 'shared/nav_bar' %>
     <section class="welcome">
+      <h1 class="welcome-text">WELCOME TO TEXTL0G. Where you can share pieces of you.</h1>
       <div class="vista-lista-post">
-        <p>imagen con la lista de todos los posts, actualizados</p>
-        <% if current_user %>
-          <%= link_to("allpost", posts_path(current_user.username)) %>
-        <% end %>
+        <p>These are the users that posted lately:</p>
+        <ul>
+          <% @users.each do |user| %>
+            <li><%= link_to user.username.capitalize, posts_path(user.username) %></li>
+          <% end %>
+        </ul>
       </div>
       <div class="markdown-info">
         <%= link_to "http://daringfireball.net/projects/markdown/syntax" do %>
-          <%= image_tag "markdown.jpg" %>
         <% end %>
-      </div>
-      <h1 class="welcome-text">BIENVENIDO A TEXTL0G, Publica y comparte un pedacito de ti.</h1>
-      <div class="buscador-post">
-          <input type="text" name="buscador" value="text">buscador con opciones, usuarios , titulos de textos, palabras clave?</input>
       </div>
     </section>
  	</main>

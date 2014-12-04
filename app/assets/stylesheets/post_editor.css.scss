@@ -67,6 +67,11 @@
     float: left;
     max-width: 70px;
     max-height: 100px;
+    margin-right: 5px;
+    &:hover {
+      max-width: 150px;
+      margin-top: -30px;
+    }
     img {
       width: 100%;
     }

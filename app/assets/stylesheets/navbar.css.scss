@@ -8,47 +8,45 @@
   line-height: 20px;
   color:#777;
 }
-.collapse-navbar{
-  width:100%;
-  height:80px;
-  float: left;
-  margin: 0px;
-  padding-left: 0px;
-  list-style: outside none none;
-  line-height: 30px;
-  background-color: #F8F8F8;
-}
-.button-red{
-  background-color: darkred;
-  border-radius: 5px;
-  width: 100px;
-  height: 25px;
-  text-align: center;
-  float:right;
-}
 .navbar-default {
   white-space: nowrap;
+  position: relative;
+  padding-top: 20px;
+}
+.whoyouare {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 20px;
 }
 .navbar-nav{
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding: 0px;
   li{
     float: left;
     position: relative;
     display: block;
     text-align: center;
-    padding:1em;
-    width: 20%;
+    padding-top: 1em;
+    padding-bottom: 1em;
     border-radius: 5px;
     border: 1px solid darkred;
     &.button {
       background-color: #90EE90;
       border: 1px solid #90EE90;
     }
+    &.button-red {
+      background-color: darkred;
+    }
   }
   a{
     text-align:center;
     color:#777;
     text-decoration:none;
-    margin:25px;
+    width: 100%;
+    margin: 20px;
   }
   p{
     margin:1em auto;

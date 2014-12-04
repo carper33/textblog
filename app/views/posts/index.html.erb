@@ -1,11 +1,10 @@
- <nav class="navbar-default" role="navigation">
-  <%= render 'shared/nav_bar' %>
- </nav>
-<h1 class= "post-header">Listing posts from user: <%= @user.username %></h1>
 <section class="container">
-  <table>
+  <%= render 'shared/nav_bar' %>
+  <h1 class= "post-header">Listing posts from user: <%= @user.username %></h1>
+  <div class="post-list">
     <%= render partial: 'post', collection: @posts %>
-  </table>
-  <br />
-  <%= link_to "Create a new post", new_post_path(current_user.username) if can_create? %>
+  </div>
+  <div class="post-actions">
+    <%= link_to "Create a new post", new_post_path(current_user.username) if can_create? %>
+  </div>
 </section>

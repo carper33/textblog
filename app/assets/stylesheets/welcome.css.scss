@@ -43,7 +43,7 @@ body{
 .vista-lista-post{
   width:49%;
   height:200px;
-  background-color:darkred;
+  border: 1px solid darkred;
   float:left;
   border-radius:25px;
 }
@@ -53,11 +53,16 @@ body{
   background-color:darkred;
   float:right;
   border-radius:25px;
+  overflow: hidden;
     img{
       width: 100%;
     }
     a{
       width: 100%;
+      display: block;
+      height: 100%;
+      background-image: image-url("markdown.jpg");
+      background-size: 100%;
     }
 }
 .buscador-post{

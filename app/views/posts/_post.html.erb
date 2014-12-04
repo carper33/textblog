@@ -1,6 +1,14 @@
+<div class="post-card">
+  <%= link_to post_path(post.user.username, post.slug) do %>
+    <div class="post-title">
+      <%= post.title %>
+    </div>
+    <div class="post-date">
+      <%= distance_of_time_in_words(post.created_at, Time.now) %>
+    </div>
 
-<tr>
-  <td><%= link_to post.title, post_path(post.user.username, post.slug) %></td>
-  <td><%= post.rendered.html_safe %></td>
-  <td><%=link_to 'Edit', edit_post_path(post.user.username, post.slug) if can_edit?(post) %></td>
-</tr>
+    <div class="post-body">
+      <%= post.rendered.html_safe %>
+    </div>
+  <% end %>
+</div>
