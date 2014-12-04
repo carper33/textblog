@@ -27,4 +27,12 @@
 </div>
 
 <div id="image_editor_footer">
+  <div id="picture-upload-button">
+    Upload new picture
+  </div>
+  <div id="all-pictures">
+    <% current_user.uploaded_pictures.each do |uploaded_picture| %>
+      <%= render partial: "shared/uploaded_picture", locals: {uploaded_picture: uploaded_picture} %>
+    <% end %>
+  </div>
 </div>

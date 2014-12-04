@@ -25,6 +25,10 @@
     right: 0px;
     width: 50%;
     min-height: 500px;
+
+    img {
+      max-width: 100%;
+    }
   }
 
   #save_post_button {
@@ -39,7 +43,7 @@
 
 #image_editor_footer {
   width: 100%;
-  height: 20px;
+  height: 100px;
   border: 1px solid black;
   bottom: 0px;
   position: fixed;
@@ -49,5 +53,22 @@
 
   &.active {
     height: 100px;
+  }
+  
+  #picture-upload-button {
+    float: left;
+  }
+
+  .ajax-file-upload {
+    float: left;
+  }
+
+  .uploaded-picture {
+    float: left;
+    max-width: 70px;
+    max-height: 100px;
+    img {
+      width: 100%;
+    }
   }
 }
