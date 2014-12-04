@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 20141204194441) do
     t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "photo"
   end
 
   create_table "texts", force: true do |t|
