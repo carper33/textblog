@@ -1,10 +1,16 @@
+
 <div class="title-post">
 	<header><%= @post.title %></header>
 </div>
 <div class= "post-content">
 	<%= @post.body %>
+	<!-- fingerprint -->
+
+	<p> <%= image_tag @post.photo_path %></p>
 </div>
 <div class="link">
 	<%= link_to("Back", posts_path(current_user.username)) %>
 	<%= link_to("Edit", edit_post_path(current_user.username, @post)) if can_edit?(@post) %>
+	<%= link_to("New post", new_post_path(current_user.username)) %>
+
 </div>

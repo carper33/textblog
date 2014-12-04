@@ -1,7 +1,6 @@
 class PostsController < ApplicationController
   before_action :find_user, except: :all
   before_action :find_post, except: [:all, :index, :new]
-
   helper_method :can_edit?, :can_create?
 
   # GET /posts
