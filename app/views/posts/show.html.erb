@@ -1,16 +1,18 @@
+  <%= render 'shared/nav_bar' %>
+
 <div class="container">
-  <div class="title-post">
+  	<div class="title-post">
     <header><%= @post.title %></header>
-  </div>
-  <div class= "post-content">
+  	</div>
+  	<div class= "post-content">
     <%= @post.rendered.html_safe %>
-  </div>
-  <% if can_edit?(@post) %>
-    <div class="post-link">
-      <%= link_to("Edit", edit_post_path(current_user.username, @post)) %>
-    </div>
-  <% end %>
-  <div class="post-link">
-    <%= link_to("Back", posts_path(@post.user.username)) %>
-  </div>
+  	</div>
+	  <% if can_edit?(@post) %>
+	    <div class="post-link">
+	      <%= link_to("Edit", edit_post_path(current_user.username, @post)) %>
+	    </div>
+	  <% end %>
+	  <div class="post-link">
+	    <%= link_to("Back", posts_path(@post.user.username)) %>
+	  </div>
 </div>

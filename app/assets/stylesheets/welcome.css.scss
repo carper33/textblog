@@ -7,7 +7,7 @@ body{
   margin: 0px;
   padding: 0px;
   background-size: cover;
-  background-image: image-url("images/aves-sunset.jpg");
+  background-image: image-url("aves-sunset.jpg");
 }
 
 .nav_container{
@@ -35,7 +35,7 @@ body{
     width:25%;
     text-align: center;
     color:darkred;
-    size:30px;
+    font-size:40px;
     width: 100%; 
     margin-top: 20px;
   }
@@ -46,6 +46,12 @@ body{
   border: 1px solid darkred;
   float:left;
   border-radius:25px;
+  background-color:darkred;
+  p{
+    color: #FFF;
+    text-align: center;
+    font-size:20px;
+  }
 }
 .markdown-info{
   width:49%;
@@ -64,11 +70,4 @@ body{
       background-image: image-url("markdown.jpg");
       background-size: 100%;
     }
-}
-.buscador-post{
-  width:60%;
-  height:200px;
-  background-color:darkred;
-  margin:auto;
-  border-radius:25px;
 }

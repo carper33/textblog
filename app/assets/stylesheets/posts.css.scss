@@ -5,37 +5,39 @@
 
 
 .title-post{
-	width:25%;
-	margin: auto;
-	background-color: lightsalmon;
-	text-align:center;
-	color:black;
-	border-radius:5px;
-	margin-bottom:30px;
+	width: 50%;
+	margin: auto auto 30px;
+	text-align: center;
+	color: #000;
+	border-radius: 5px;
+	border: 1px solid #8B0000;
+	margin-top: 20px;
+	font-size: 45px;
 }
 .post-content{
 	max-width:920px;
 	height: 100%;
-	background-color:lightsalmon;
 	margin: 0 auto;
 	padding:1em;
 	text-align:justify;
 	border-radius: 2em;
+	border: 1px solid darkred;
+	background-color:darkred;
+
 }
 .post-header{
-	background-color:lightsalmon;
 	margin: 0 auto;
 	padding:1em;
 	text-align:center;
 	border-radius: 2em;
 	margin-top:1em;
 	margin-bottom:1em;
+	border: 1px solid #8B0000;
 
 }
 .posts-table{
 	width: 75%;
 	height: 75%;
-	background-color:lightsalmon;
 	margin: 0 auto;
 	padding:1em;
 	text-align:center;
@@ -44,7 +46,6 @@
 .list-users{
 	width: 75%;
 	height: 75%;
-	background-color:lightsalmon;
 	margin: 0 auto;
 	padding:2em;
 	text-align:justify;
@@ -64,8 +65,16 @@
 }
 .post-actions {
   clear: both;
+
 }
 .post-link {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  	margin-top: 1em;
+  	margin-bottom: 1em; 
+	font-size: 20px;
+	border: 1px solid darkred;
+	border-radius: 5px;
+	background-color: #8B0000;
+	margin: 10px auto;
+	margin-left: 10px;
+	float: right;
 }
