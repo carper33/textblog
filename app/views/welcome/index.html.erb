@@ -16,6 +16,12 @@
         <% end %>
       </div>
     </section>
+    <br>
+    <% if current_user%>
+      <div class="primer-post">
+        <%= link_to "Tu primer post", new_post_path(current_user.username) %>
+      </div>
+    <% end %>
  	</main>
 </header>
 

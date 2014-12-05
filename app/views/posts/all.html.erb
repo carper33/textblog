@@ -3,3 +3,4 @@
   <h1 class= "post-header">Listing all posts</h1>
   <%= render partial: 'post', collection: @posts %>
 </section>
+  <%= link_to "Create a new post", new_post_path(current_user.username) if can_create? %>
